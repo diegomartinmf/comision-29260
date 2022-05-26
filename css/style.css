@@ -6,7 +6,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -336,7 +335,7 @@ body {
         opacity: 0;
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(-200px);
         opacity: 0;
     }
 }
@@ -345,13 +344,15 @@ body {
     position: absolute;
     box-sizing: border-box;
     display: block;
-    object-fit: fill;
-    width: 80%;
-    height: 80%;
+    max-width: 50%;
+    max-height: auto;
+    width: 65%;
+    height: 100%;
     margin: 0;
     border: 0;
     padding: 3px;
     opacity: 0;
+    left: 25%;
     animation: display 20s infinite;
     align-self: center;
     align-content: center;
@@ -578,8 +579,11 @@ body {
 /*Sección principal*/
 
 .productos {
-    display: flex;
-    justify-content: space-evenly;
+    margin: 10px 10px 10px 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .productos__header {
@@ -592,12 +596,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     text-align: center;
-}
-
-.productos {
-    margin-top: 10px;
-    margin-left: 10px;
-    padding: 5px 5px;
 }
 
 .productos h2 {
@@ -694,8 +692,18 @@ body {
 .contacto {
     font-size: 16px;
     margin-left: 10px;
+    margin-right: 10px;
     margin-top: 20px;
     padding: 5px 5px;
+    background-image: linear-gradient(to right, blue, white);
+}
+
+.contacto .contacto__flex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
 }
 
 .contacto h1 {
@@ -741,9 +749,12 @@ body {
 /* Responsive */
 
 @media screen and (max-width: 760px) {
-    .contacto .formulario {
+    .contacto .contacto__flex {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .contacto__flex__mapa {
+        max-width: 50%;
     }
 }

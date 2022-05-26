@@ -65,24 +65,33 @@
     <main>
         <section class="contacto">
             <h1>Ingrese sus datos de contacto y mensaje</h1>
-            <form class="formulario" action="" method="post">
-                <section class="contacto__datos">
-                    <label for="nombre_completo">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Su nombre" />
-                    <br>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="herbalquimia@gmail.com" />
+            <section class="contacto__flex">
+                <section class="contacto__flex__ingreso">
+                    <form class="formulario" action="" method="post">
+                        <article class="contacto__datos">
+                            <label for="nombre_completo">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Su nombre" />
+                            <br>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="herbalquimia@gmail.com" />
+                        </article>
+                        <article class="contacto__titulo">
+                            <label for="titulo">Título:</label>
+                            <input type="text" name="titulo" id="titulo" placeholder="Título" />
+                        </article>
+                        <article class="contacto__mensaje">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea name="mensaje" rows="5" placeholder="Mensaje"></textarea>
+                        </article>
+                        <button type="submit" title="Enviar mensaje" class="contacto__botonenviar">Enviar</button>
+                    </form>
                 </section>
-                <section class="contacto__titulo">
-                    <label for="titulo">Título:</label>
-                    <input type="text" name="titulo" id="titulo" placeholder="Título" />
+                <section class="contacto__flex__mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.9739992518776!2d-55.239268885060106!3d-34.3765815530217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x950aba3aaace9731%3A0x852a1cbbfdaf2cc9!2sTa-Ta%20Minas!5e0!3m2!1sen!2suy!4v1653605579742!5m2!1sen!2suy"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </section>
-                <section class="contacto__mensaje">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" rows="5" placeholder="Mensaje"></textarea>
-                </section>
-                <button type="submit" title="Enviar mensaje" class="contacto__botonenviar">Enviar</button>
-            </form>
+            </section>
+
         </section>
         <!--EmpiezaSección pie de página de la página-->
         <footer class="footer">
