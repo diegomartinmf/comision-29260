@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbalquimia</title>
+
+    <!--Hojaa de Estilos-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="./assets/img/logo2.ico" rel="icon">
+
+    <!-- Íconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <!-- Header de la Página -->
+    <header class="header">
+        <section class="header__logo">
+            <!--Sección lateral izquierda del encabezado para colocar el logo-->
+            <!--Además al hacer clic en el logo se vuelve al inicio-->
+            <a href="./index.html"><img class="logo" src="./assets/logo/logo2.png" alt="Usted ha ingresado a la web de Herbalquimia"></a>
+        </section>
+        <section class="header__navegacion">
+
+            <nav class="header__navegacion__barra">
+                <ul>
+                    <li>
+                        <a href="./index.html" class="active">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./pages/sobrenosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="./pages/nuestroequipo.html">Nuestro Equipo</a>
+                    </li>
+                    <li>
+                        <a href="./pages/productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="./pages/recetas.html">Recetas</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <!--Sección principal de la página -->
+    <main class="main-index">
+        <section class="encabezado">
+            <h1>Bienvenidos al Sitio de Herbalquimia</h1>
+        </section>
+        <section class="carrusel">
+            <article class="carrusel__imagenes">
+                <img src="./assets/img/pastolimon.png" alt="Pasto Limón">
+                <img src="./assets/img/romero.png" alt="Romero">
+                <img src="./assets/img/laurel.png" alt="Laurel">
+                <img src="./assets/img/eneldo.png" alt="Eneldo">
+                <img src="./assets/img/tomillo.png" alt="Tomillo">
+            </article>
+        </section>
+        <section class="principal">
+            <section class="principal__imagen">
+                <img class="principal__img" src="./assets/img/hierbas.jpg " alt="Generalidades sobre el tema de hierbas medicinales ">
+            </section>
+            <article class="principal__article">
+                <h2>Plantas Medicinales</h2>
+                <p>Las plantas medicinales no son cualquier tipo de plantas: son plantas que se utilizan para ayudar a prevenir o curar enfermedades en los seres humanos. Si bien su uso no está regulado, a diferencia de los medicamentos de la industria farmacéutica,
+                    diversos estudios y experimentos han demostrado los beneficios de las plantas medicinales.</p>
+                <h3>Enfoque</h3>
+                <p class="p-h3 ">El arte de curar a través del uso de hierbas y plantas medicinales es una tradición milenaria. A lo largo de toda nuestra historia, siempre hemos tenido una relación íntima con la naturaleza, ella es quien nos provee alimento, cobijo,
+                    y también protección contra las enfermedades. Este sitio es una guía para todos aquellos que buscan un remedio casero, o bien, una alternativa a los remedios farmaceúticos.</p>
+            </article>
+        </section>
+
+    </main>
+    <!--EmpiezaSección pie de página de la página-->
+    <footer class="footer ">
+        <!--Lo que se va a ver a la izquierda del footer-->
+        <section class="footer__izquierda ">
+            <a href="index.html "><img src="./assets/logo/logo2.png " class="footer__izquierda__logo " alt="Usted ha ingresado a la web de Herbalquimia "></a>
+            <p>Te acompañamos en el proceso de descubrimiento de la farmacia herbal y sus beneficios</p>
+        </section>
+        <!--Lo que se va a ver en el centro del footer-->
+        <section class="footer__central ">
+            <h4>Contactanos</h4>
+            <p>
+                18 de Julio 1245<br> Minas, Lavalleja<br> Uruguay
+                <br>
+                <strong>Email:</strong>herbalquimia@gmail.com<br>
+            </p>
+            <section id="redes-sociales ">
+                <!--Coloco genérico pues la página aun no tiene redes-->
+                <a href="https://www.facebook.com "><i class="fa fa-facebook "></i></a>
+                <a href="https://www.instagram.com "><i class="fa fa-instagram "></i></a>
+            </section>
+        </section>
+
+        <section class="footer__derecha ">
+            <h4>Nuestro Newsletter</h4>
+            <p>
+                Si querés suscribirte a nuestro newsletter mensual de novedades sobre hierbas y recetas, dejanos tu mail y nos pondremos en contacto.</p>
+            <form action=" " method="post ">
+                <input type="email " name="email " placeholder="herbalquimia@gmail.com "><input class="footer__derecha footer__derecha--boton " type="submit " value="Suscribite ">
+            </form>
+        </section>
+
+        <section class="footer__inferior ">
+            <h5>&copy; Herbalquimia 2022</h5>
+        </section>
+
+
+    </footer>
+    <!-- Termina Pie de Página-->
+</body>
+
+</html>
