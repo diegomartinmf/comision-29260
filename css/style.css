@@ -566,10 +566,10 @@ body {
     .integrantes {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-content: center;
         align-items: center;
     }
+    git
 }
 
 
