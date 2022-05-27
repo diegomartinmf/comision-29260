@@ -566,6 +566,9 @@ body {
     .integrantes {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
     }
 }
 
@@ -623,6 +626,11 @@ body {
     padding-left: 10px;
 }
 
+.productos img {
+    width: 75%;
+    height: auto;
+}
+
 @media screen and (max-width: 760px) {
     .productos {
         display: flex;
@@ -665,8 +673,8 @@ body {
 }
 
 .recetas__iframe {
-    height: 400px;
-    width: 600px;
+    max-width: 95%;
+    max-height: auto;
 }
 
 @media screen and (max-width: 760px) {
@@ -675,8 +683,7 @@ body {
         flex-direction: column;
     }
     .recetas .recetas__iframe {
-        height: auto;
-        width: 90%;
+        max-width: 90%;
     }
 }
 
@@ -694,8 +701,10 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 20px;
+    margin-bottom: 10px;
     padding: 5px 5px;
     background-image: linear-gradient(to right, blue, white);
+    animation: sacudir 2.5s infinite;
 }
 
 .contacto .contacto__flex {
@@ -706,35 +715,57 @@ body {
     align-items: center;
 }
 
+.formulario {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .contacto h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     text-align: center;
-}
-
-.contacto__datos {
-    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 .contacto__datos #nombre,
 #email {
     color: darkblue;
+    padding: 5px;
+    margin: 5px;
+}
+
+.contacto__datos #nombre:hover,
+.contacto__datos #email:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
 }
 
 .contacto__titulo {
     margin-left: 10px;
     font-family: 'Montserrat', sans-serif;
-    padding-top: 5px;
+    padding: 5px;
+    margin: 5px;
 }
 
 .contacto__titulo #titulo {
     color: darkblue;
 }
 
+.contacto__titulo #titulo:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+}
+
 .contacto__mensaje {
-    margin-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    overflow: hidden;
+    height: 10rem;
 }
 
 .contacto__mensaje textarea {
@@ -743,6 +774,23 @@ body {
 
 .contacto__botonenviar {
     background-color: blueviolet;
+    align-self: center;
+}
+
+.contacto__botonenviar:hover {
+    background-color: #911131;
+}
+
+
+/*Animación contacto*/
+
+@keyframes sacudir {
+    0% {
+        tranform: translate(0, 8px);
+    }
+    50% {
+        transform: translate(0, -8px);
+    }
 }
 
 
@@ -753,8 +801,5 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .contacto__flex__mapa {
-        max-width: 50%;
     }
 }
