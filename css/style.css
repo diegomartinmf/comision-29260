@@ -114,7 +114,57 @@ body {
 }
 
 
+/* @media (min-width: 768px) {
+    .navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float: none;
+    }
+} */
+
+
 /* Menú hamburguesa */
+
+.navbar {
+    background-color: rgb(164, 252, 183);
+}
+
+.navbar .navbar-brand>img {
+    height: 120px;
+    width: auto;
+    border-radius: 8px;
+    border: 1px solid rgb(219, 13, 13);
+    padding: 5px;
+    margin: 5px 5px;
+}
+
+.navbar-toggler[aria-expanded="true"],
+.navbar-toggler[aria-expanded="true"]:focus {
+    background-color: red;
+}
+
+.navbar a {
+    color: #0e0d0d;
+    padding: 0px 0px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+    color: #0c0572;
+    background-color: rgb(252, 252, 153);
+    text-decoration: none;
+}
+
+.navbar ul {
+    margin-left: 10px;
+}
+
+.navbar .active {
+    color: black;
+}
 
 
 /********************************************/
@@ -131,7 +181,8 @@ body {
 
 /* Inicio Footer General*/
 
-.footer {
+
+/* .footer {
     height: 180px;
     font-family: 'Mukta', sans-serif;
     background: rgb(11, 175, 47);
@@ -143,6 +194,16 @@ body {
     grid-template-columns: 33% 33% 33%;
     row-gap: 10px;
     justify-content: center;
+} */
+
+.footer {
+    font-family: 'Mukta', sans-serif;
+    background: rgb(11, 175, 47);
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.5);
+}
+
+.footer .copyright {
+    background-color: #0e3721;
 }
 
 @media screen and (max-width: 760px) {
@@ -293,6 +354,9 @@ body {
 
 
 /*Sección principal*/
+
+
+/* CSS Antes de aplicar Bootstrap*/
 
 .main-index {
     margin-right: 10px;
@@ -465,6 +529,22 @@ body {
 }
 
 
+/* Luego de aplicar Bootstrap * /
+
+/* Carrusel */
+
+.main-index .carousel {
+    position: relative;
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+
+.main-index .carousel-inner img {
+    margin: auto;
+    width: 50%;
+}
+
+
 /******************************* Página Sobre Nosotros **************/
 
 
@@ -569,7 +649,6 @@ body {
         align-content: center;
         align-items: center;
     }
-    git
 }
 
 
@@ -627,8 +706,13 @@ body {
 }
 
 .productos img {
+    padding: 10px;
     width: 75%;
     height: auto;
+}
+
+.productos img:hover {
+    transform: scale(1.02);
 }
 
 @media screen and (max-width: 760px) {
@@ -730,22 +814,25 @@ body {
     margin-bottom: 20px;
 }
 
-.contacto__datos #nombre,
+
+/* .contacto__datos #nombre,
 #email {
     color: darkblue;
     padding: 5px;
     margin: 5px;
-}
+} */
 
-.contacto__datos #nombre:hover,
-.contacto__datos #email:hover {
+.contacto__datos #nombre_completo:hover,
+.contacto__datos #formemailcontacto:hover {
     border-bottom: 5px solid #0e3721;
     height: 30px;
     width: 380px;
     transition: ease 0.5s;
 }
 
-.contacto__titulo {
+.contacto__titulo,
+.contacto__datos #nombre_completo,
+.contacto__datos #formemailcontacto {
     margin-left: 10px;
     font-family: 'Montserrat', sans-serif;
     padding: 5px;
