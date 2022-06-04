@@ -26,6 +26,10 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+h1 {
+    padding: 10px;
+}
+
 @media screen and (max-width: 760px) {}
 
 
@@ -542,6 +546,7 @@ body {
 .main-index .carousel-inner img {
     margin: auto;
     width: 50%;
+    max-height: 90vh;
 }
 
 
@@ -600,12 +605,19 @@ body {
 /*Sección principal*/
 
 .integrantes {
-    margin-left: 10px;
-    margin-right: 10px;
     display: flex;
+    margin: 10px 10px 10px 10px;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.integrantes .integrantes__item {
+    justify-content: space-around;
+    padding: 5px;
+    flex: 0 1 calc(25% - 8em);
+    width: 100%;
 }
 
 .int h1 {
@@ -614,37 +626,38 @@ body {
     text-align: center;
 }
 
-.integrantes .integrantes__cargo {
+.integrantes .integrantes__item .integrantes__item__contenido h3 {
     font-family: 'Mukta', sans-serif;
     font-size: 14px;
 }
 
-.integrantes .integrantes__descripcion {
+.integrantes .integrantes__item .integrantes__item__contenido p {
     font-family: 'Mukta', sans-serif;
     font-size: 12px;
 }
 
-.integrantes ul {
+.integrantes .integrantes__item .integrantes__item__contenido ul {
     display: inline;
     position: relative;
     /* Saco los bullets de la lista no ordenada */
     list-style-type: none;
 }
 
-.integrantes li {
+.integrantes .integrantes__item .integrantes__item__contenido li {
     display: inline;
     position: relative;
     /* Saco los bullets de la lista no ordenada */
     list-style-type: none;
 }
 
-.integrantes ul li a {
+.integrantes .integrantes__item .integrantes__item__contenido a {
     text-decoration: none;
 }
 
 @media screen and (max-width: 760px) {
     .integrantes {
         display: flex;
+        margin-left: 10px;
         flex-direction: column;
         align-content: center;
         align-items: center;
@@ -822,41 +835,33 @@ body {
     margin: 5px;
 } */
 
-.contacto__datos #nombre_completo:hover,
-.contacto__datos #formemailcontacto:hover {
-    border-bottom: 5px solid #0e3721;
-    height: 30px;
-    width: 380px;
-    transition: ease 0.5s;
-}
-
 .contacto__titulo,
-.contacto__datos #nombre_completo,
-.contacto__datos #formemailcontacto {
+.contacto__datos,
+.contacto__mensaje {
     margin-left: 10px;
     font-family: 'Montserrat', sans-serif;
     padding: 5px;
     margin: 5px;
 }
 
-.contacto__titulo #titulo {
-    color: darkblue;
+.contacto__datos #nombre_completo,
+.contacto__datos #formemailcontacto,
+.contacto__titulo #titulo,
+.contacto__mensaje #formmensaje {
+    background-color: #e6ebee;
+    transition: background 2s;
 }
 
-.contacto__titulo #titulo:hover {
-    border-bottom: 5px solid #0e3721;
-    height: 30px;
-    width: 380px;
-    transition: ease 0.5s;
+.contacto__datos #nombre_completo:focus,
+.contacto__datos #formemailcontacto:focus,
+.contacto__titulo #titulo:focus,
+.contacto__mensaje #formmensaje:focus {
+    background-color: #9cadbb;
 }
 
 .contacto__mensaje {
     overflow: hidden;
     height: 10rem;
-}
-
-.contacto__mensaje textarea {
-    color: darkblue
 }
 
 .contacto__botonenviar {
