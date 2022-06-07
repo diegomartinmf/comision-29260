@@ -1,0 +1,33 @@
+/* Inicio variables del footer */
+
+$fondo-footer: rgb(11, 175, 47);
+
+/* Fin de variables del footer */
+
+
+/* Inicio del footer */
+
+.footer {
+    font-family: 'Mukta', sans-serif;
+    background: $fondo-footer;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.5);
+    .copyright {
+        background-color: #0e3721;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .footer {
+        height: auto;
+        font-family: 'Mukta', sans-serif;
+        background: rgb(11, 175, 47);
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.5);
+        padding: 5px 5px 5px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+/* Fin del footer */

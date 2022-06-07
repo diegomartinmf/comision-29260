@@ -1,0 +1,42 @@
+/* Inicio del main del index */
+
+.nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .nosotros__imagen {
+        margin-left: 10px;
+    }
+    .nosotros__descripcion {
+        p {
+            font-size: 12px;
+            margin-left: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+    }
+}
+
+.nosotros__encabezado {
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* Fin del main del index */

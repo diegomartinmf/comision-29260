@@ -1,0 +1,83 @@
+/* Inicio variables header */
+
+$color-fondo-header:rgb(164, 252, 183);
+
+/* Fin de variables header */
+
+
+/* Inicio del header */
+
+.header {
+    height: 140px;
+    /*padding: 0px 0;*/
+    background: $color-fondo-header;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.5);
+    margin: 10px 10px 20px 10px;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header__logo {
+        .logo {
+            height: 120px;
+            width: auto;
+            border-radius: 8px;
+            border: 1px solid rgb(219, 13, 13);
+            padding: 5px;
+            margin: 5px 5px;
+        }
+    }
+}
+
+
+/* Inicio barra de navagación */
+
+
+/* Find de barra de navegación */
+
+
+/* Barra de navegación bootstrap y hamnburguesa */
+
+.navbar {
+    background-color: rgb(164, 252, 183);
+    .navbar-brand>img {
+        height: 120px;
+        width: auto;
+        border-radius: 8px;
+        border: 1px solid rgb(219, 13, 13);
+        padding: 5px;
+        margin: 5px 5px;
+    }
+    a {
+        color: #0e0d0d;
+        padding: 0px 0px;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        text-decoration: none;
+    }
+    .nav-item {
+        .nav-link {
+            &:hover {
+                color: #720514;
+                background-color: rgb(252, 252, 153);
+                text-decoration: none;
+            }
+        }
+    }
+    ul {
+        margin-left: 10px;
+    }
+    .active {
+        color: black;
+    }
+    .navbar-toggler[aria-expanded="true"],
+    .navbar-toggler[aria-expanded="true"]:focus {
+        background-color: red;
+    }
+}
+
+
+/* Fin Barra Bootstrap y hamburguesa */
+
+
+/* Fin del header */

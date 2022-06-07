@@ -1,0 +1,22 @@
+/* Variables */
+
+$verde-fondo:rgb(135, 231, 143);
+$letra-general: "Open Sans",
+sans-serif;
+
+/* Fin de variables */
+
+
+/* Inicio del body */
+
+body {
+    background: $verde-fondo;
+    color: #444;
+    font-family: $letra-general;
+    h1 {
+        padding: 10px;
+    }
+}
+
+
+/* Fin del body */
