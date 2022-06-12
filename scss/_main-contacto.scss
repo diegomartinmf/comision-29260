@@ -1,0 +1,91 @@
+.contacto {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    background-image: linear-gradient(to right, blue, white);
+    animation: sacudir 2.5s infinite;
+    .contacto__flex {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.contacto__titulo,
+.contacto__datos,
+.contacto__mensaje {
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    margin: 5px;
+}
+
+.contacto__datos #nombre_completo,
+.contacto__datos #formemailcontacto,
+.contacto__titulo #titulo,
+.contacto__mensaje #formmensaje {
+    background-color: #e6ebee;
+    transition: background 2s;
+}
+
+.contacto__datos #nombre_completo:focus,
+.contacto__datos #formemailcontacto:focus,
+.contacto__titulo #titulo:focus,
+.contacto__mensaje #formmensaje:focus {
+    background-color: #9cadbb;
+}
+
+.contacto__mensaje {
+    overflow: hidden;
+    height: 10rem;
+}
+
+.contacto__botonenviar {
+    background-color: blueviolet;
+    align-self: center;
+    &:hover {
+        background-color: #911131;
+    }
+}
+
+.formulario {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*Animación contacto*/
+
+@keyframes sacudir {
+    0% {
+        tranform: translate(0, 8px);
+    }
+    50% {
+        transform: translate(0, -8px);
+    }
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 760px) {
+    .contacto .contacto__flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

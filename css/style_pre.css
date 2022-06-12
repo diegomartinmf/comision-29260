@@ -1,0 +1,404 @@
+@charset "UTF-8";
+/* Variables */
+/* Fin de variables */
+/* Inicio del body */
+body {
+  background: #87e78f;
+  color: #444;
+  font-family: "Open Sans", sans-serif; }
+  body h1 {
+    padding: 10px; }
+
+/* Fin del body */
+/* Inicio variables header */
+/* Mapa con los colores del header nav */
+/* Fin de variables header */
+/* Inicio del header */
+.header {
+  height: 140px;
+  /*padding: 0px 0;*/
+  background: #a4fcb7;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.5);
+  margin: 10px 10px 20px 10px;
+  padding: 5px 5px 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header .header__logo .logo {
+    height: 120px;
+    width: auto;
+    border-radius: 8px;
+    border: 1px solid #db0d0d;
+    padding: 5px;
+    margin: 5px 5px; }
+
+/* Inicio barra de navagación */
+/* Find de barra de navegación */
+/* Barra de navegación bootstrap y hamnburguesa */
+.navbar {
+  background-color: #a4fcb7; }
+  .navbar .navbar-brand > img {
+    height: 120px;
+    width: auto;
+    border-radius: 8px;
+    border: 1px solid #db0d0d;
+    padding: 5px;
+    margin: 5px 5px; }
+  .navbar a {
+    color: #0e0d0d;
+    padding: 0px 0px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none; }
+  .navbar .nav-item .nav-link:hover {
+    color: #720514;
+    background-color: #fcfc99;
+    text-decoration: none; }
+  .navbar ul {
+    margin-left: 10px; }
+    .navbar ul li:nth-child(2) {
+      background: #a4fcb1; }
+    .navbar ul li:nth-child(3) {
+      background: #a4fcb2; }
+    .navbar ul li:nth-child(4) {
+      background: #a4fcb3; }
+    .navbar ul li:nth-child(5) {
+      background: #a4fcb4; }
+    .navbar ul li:nth-child(6) {
+      background: #a4fcb5; }
+  .navbar .active {
+    color: black; }
+  .navbar .navbar-toggler[aria-expanded="true"],
+  .navbar .navbar-toggler[aria-expanded="true"]:focus {
+    background-color: red; }
+
+/* Fin Barra Bootstrap y hamburguesa */
+/* Fin del header */
+/* Inicio variables del footer */
+/* Fin de variables del footer */
+/* Inicio del footer */
+.footer {
+  font-family: 'Mukta', sans-serif;
+  background: #0baf2f;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.5); }
+  .footer .copyright {
+    background-color: #0e3721; }
+
+@media screen and (max-width: 760px) {
+  .footer {
+    height: auto;
+    font-family: 'Mukta', sans-serif;
+    background: #0baf2f;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.5);
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; } }
+
+/* Fin del footer */
+.main-index {
+  margin-right: 10px;
+  margin-left: 10px;
+  display: grid;
+  grid-template-rows: 1fr 4fr 4fr;
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: center;
+    align-content: center;
+    align-items: center; */ }
+  .main-index .encabezado {
+    position: relative;
+    grid-row: 1 / 2;
+    grid-column: 1 / 3; }
+    .main-index .encabezado h1 {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      font-size: 18px; }
+  .main-index .principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 3 / 4;
+    grid-column: 1 / 3; }
+    .main-index .principal .principal__img {
+      position: relative;
+      height: 300px;
+      width: auto; }
+    .main-index .principal .principal__article h2 {
+      font-size: 16px;
+      color: #0a0a0a;
+      text-align: right;
+      font-weight: 600;
+      position: relative;
+      font-family: 'Mukta', sans-serif; }
+    .main-index .principal .principal__article h3 {
+      font-size: 14px;
+      color: #0a0a0a;
+      text-align: right;
+      font-weight: 600;
+      position: relative;
+      font-family: 'Mukta', sans-serif; }
+    .main-index .principal .principal__article p {
+      text-align: right;
+      font-size: 12px;
+      padding-bottom: 60px;
+      color: #556877;
+      font-family: 'Lobster', cursive; }
+  .main-index .carousel {
+    position: relative;
+    grid-row: 2 / 3;
+    grid-column: 1 / 3; }
+  .main-index .carousel-inner img {
+    margin: auto;
+    width: 50%;
+    max-height: 90vh; }
+
+@media screen and (max-width: 760px) {
+  .main-index {
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-rows: 20px 300px;
+            grid-template-columns: auto; */
+    justify-content: center;
+    align-content: center;
+    gap: 20px; }
+    .main-index .encabezado {
+      grid-row: 1 / 2; }
+    .main-index .principal {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      grid-row: 2 / 3; }
+      .main-index .principal .principal__img {
+        width: 100%;
+        height: auto; }
+      .main-index .principal .principal__article h3 {
+        /* display: none; */
+        text-align: center; }
+      .main-index .principal .principal__article h2 {
+        /* display: none; */
+        text-align: center; }
+      .main-index .principal .principal__article p {
+        /* display: none; */
+        text-align: center; } }
+
+.contacto {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 5px 5px;
+  background-image: linear-gradient(to right, blue, white);
+  animation: sacudir 2.5s infinite; }
+  .contacto .contacto__flex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    align-items: center; }
+  .contacto h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px; }
+
+.contacto__titulo,
+.contacto__datos,
+.contacto__mensaje {
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px;
+  margin: 5px; }
+
+.contacto__datos #nombre_completo,
+.contacto__datos #formemailcontacto,
+.contacto__titulo #titulo,
+.contacto__mensaje #formmensaje {
+  background-color: #e6ebee;
+  transition: background 2s; }
+
+.contacto__datos #nombre_completo:focus,
+.contacto__datos #formemailcontacto:focus,
+.contacto__titulo #titulo:focus,
+.contacto__mensaje #formmensaje:focus {
+  background-color: #9cadbb; }
+
+.contacto__mensaje {
+  overflow: hidden;
+  height: 10rem; }
+
+.contacto__botonenviar {
+  background-color: blueviolet;
+  align-self: center; }
+  .contacto__botonenviar:hover {
+    background-color: #911131; }
+
+.formulario {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+/*Animación contacto*/
+@keyframes sacudir {
+  0% {
+    tranform: translate(0, 8px); }
+  50% {
+    transform: translate(0, -8px); } }
+
+/* Responsive */
+@media screen and (max-width: 760px) {
+  .contacto .contacto__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+.integrantes {
+  display: flex;
+  margin: 10px 10px 10px 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around; }
+  .integrantes .integrantes__item {
+    justify-content: space-around;
+    padding: 5px;
+    flex: 0 1 calc(25% - 8em);
+    width: 100%; }
+    .integrantes .integrantes__item .integrantes__item__contenido h3 {
+      font-family: 'Mukta', sans-serif;
+      font-size: 14px; }
+    .integrantes .integrantes__item .integrantes__item__contenido p {
+      font-family: 'Mukta', sans-serif;
+      font-size: 12px; }
+    .integrantes .integrantes__item .integrantes__item__contenido ul {
+      display: inline;
+      position: relative;
+      /* Saco los bullets de la lista no ordenada */
+      list-style-type: none; }
+    .integrantes .integrantes__item .integrantes__item__contenido li {
+      display: inline;
+      position: relative;
+      /* Saco los bullets de la lista no ordenada */
+      list-style-type: none; }
+    .integrantes .integrantes__item .integrantes__item__contenido a {
+      text-decoration: none; }
+
+.int h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: center; }
+
+@media screen and (max-width: 760px) {
+  .integrantes {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; } }
+
+/* Inicio del main del index */
+.nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px; }
+  .nosotros h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-left: 10px; }
+  .nosotros .nosotros__imagen {
+    margin-left: 10px; }
+  .nosotros .nosotros__descripcion p {
+    font-size: 12px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; }
+
+.nosotros__encabezado h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: center; }
+
+@media screen and (max-width: 760px) {
+  .nosotros {
+    display: flex;
+    flex-direction: column; } }
+
+/* Fin del main del index */
+.productos {
+  margin: 10px 10px 10px 10px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+  .productos h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: top 5px; }
+  .productos p {
+    font-family: 'Lobster', cursive;
+    font-size: 12px; }
+  .productos ul {
+    display: inline;
+    position: relative;
+    /* Saco los bullets de la lista no ordenada */ }
+    .productos ul li {
+      list-style-image: url(../assets/img/logo2.ico);
+      margin-left: 35px;
+      padding-top: 5px;
+      padding-left: 10px; }
+  .productos img {
+    padding: 10px;
+    width: 75%;
+    height: auto; }
+    .productos img:hover {
+      transform: scale(1.02); }
+
+.productos__header {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 5px 5px; }
+  .productos__header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center; }
+
+@media screen and (max-width: 760px) {
+  .productos {
+    display: flex;
+    flex-direction: column; }
+    .productos img {
+      width: 80%;
+      height: auto; } }
+
+.recetas {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 5px 5px;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px; }
+  .recetas h2 {
+    font-size: 14px; }
+  .recetas .recetas__iframe {
+    max-width: 95%;
+    max-height: auto; }
+
+.rec h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: center; }
+
+@media screen and (max-width: 760px) {
+  .recetas {
+    display: flex;
+    flex-direction: column; }
+    .recetas .recetas__iframe {
+      max-width: 90%; } }

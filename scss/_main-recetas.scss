@@ -1,0 +1,33 @@
+.recetas {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px 5px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    h2 {
+        font-size: 14px;
+    }
+    .recetas__iframe {
+        max-width: 95%;
+        max-height: auto;
+    }
+}
+
+.rec h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+    .recetas {
+        display: flex;
+        flex-direction: column;
+        .recetas__iframe {
+            max-width: 90%;
+        }
+    }
+}

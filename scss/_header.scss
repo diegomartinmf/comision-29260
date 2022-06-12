@@ -1,6 +1,10 @@
 /* Inicio variables header */
 
-$color-fondo-header:rgb(164, 252, 183);
+$color-fondo-header:#a4fcb7;
+
+/* Mapa con los colores del header nav */
+
+$colores-header:( nosotros:#a4fcb1, equipo: #a4fcb2, productos: #a4fcb3, recetas:#a4fcb4, contacto:#a4fcb5);
 
 /* Fin de variables header */
 
@@ -66,6 +70,23 @@ $color-fondo-header:rgb(164, 252, 183);
     }
     ul {
         margin-left: 10px;
+        li {
+            &:nth-child(2) {
+                background: map-get($colores-header, nosotros);
+            }
+            &:nth-child(3) {
+                background: map-get($colores-header, equipo);
+            }
+            &:nth-child(4) {
+                background: map-get($colores-header, productos);
+            }
+            &:nth-child(5) {
+                background: map-get($colores-header, recetas);
+            }
+            &:nth-child(6) {
+                background: map-get($colores-header, contacto);
+            }
+        }
     }
     .active {
         color: black;
