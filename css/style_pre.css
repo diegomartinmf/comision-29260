@@ -76,20 +76,21 @@ body {
 /* Fin del header */
 /* Inicio variables del footer */
 /* Fin de variables del footer */
+/* Código reutilizable en footer */
 /* Inicio del footer */
 .footer {
   font-family: 'Mukta', sans-serif;
-  background: #0baf2f;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.5); }
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.5);
+  background: #0baf2f; }
   .footer .copyright {
     background-color: #0e3721; }
 
 @media screen and (max-width: 760px) {
   .footer {
-    height: auto;
     font-family: 'Mukta', sans-serif;
-    background: #0baf2f;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.5);
+    height: auto;
+    background: #0baf2f;
     padding: 5px 5px 5px 5px;
     display: flex;
     flex-direction: column;
@@ -205,17 +206,19 @@ body {
     text-align: center;
     margin-bottom: 20px; }
 
-.contacto__titulo,
-.contacto__datos,
+.contacto__titulo, .contacto__datos,
 .contacto__mensaje {
   margin-left: 10px;
   font-family: 'Montserrat', sans-serif;
   padding: 5px;
   margin: 5px; }
 
+/* Uso de extend */
 .contacto__datos #nombre_completo,
 .contacto__datos #formemailcontacto,
 .contacto__titulo #titulo,
+.contacto__datos #titulo,
+.contacto__mensaje #titulo,
 .contacto__mensaje #formmensaje {
   background-color: #e6ebee;
   transition: background 2s; }
@@ -223,6 +226,8 @@ body {
 .contacto__datos #nombre_completo:focus,
 .contacto__datos #formemailcontacto:focus,
 .contacto__titulo #titulo:focus,
+.contacto__datos #titulo:focus,
+.contacto__mensaje #titulo:focus,
 .contacto__mensaje #formmensaje:focus {
   background-color: #9cadbb; }
 
@@ -269,6 +274,13 @@ body {
     padding: 5px;
     flex: 0 1 calc(25% - 8em);
     width: 100%; }
+    .integrantes .integrantes__item picture {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s; }
+      .integrantes .integrantes__item picture:hover {
+        transform: scale(1.05); }
     .integrantes .integrantes__item .integrantes__item__contenido h3 {
       font-family: 'Mukta', sans-serif;
       font-size: 14px; }

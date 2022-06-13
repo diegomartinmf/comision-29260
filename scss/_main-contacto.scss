@@ -22,13 +22,19 @@
     }
 }
 
-.contacto__titulo,
-.contacto__datos,
-.contacto__mensaje {
+.contacto__titulo {
     margin-left: 10px;
     font-family: 'Montserrat', sans-serif;
     padding: 5px;
     margin: 5px;
+}
+
+
+/* Uso de extend */
+
+.contacto__datos,
+.contacto__mensaje {
+    @extend .contacto__titulo;
 }
 
 .contacto__datos #nombre_completo,
