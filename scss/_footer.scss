@@ -27,7 +27,7 @@ $fondo-footer: rgb(11, 175, 47);
     .footer {
         @include letra-footer;
         height: auto;
-        background: rgb(11, 175, 47);
+        background: $fondo-footer;
         padding: 5px 5px 5px 5px;
         display: flex;
         flex-direction: column;
